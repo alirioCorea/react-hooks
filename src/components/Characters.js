@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect,useContext } from "react"
+import ThemeContext from '../context/ThemeContext';
 
 export default function Characters() {
 
     const [characters, setCharacters] = useState([]);
+    const {theme} = useContext(ThemeContext);
 
     useEffect(() => {
         fetch("https://rickandmortyapi.com/api/character/")
@@ -11,7 +13,7 @@ export default function Characters() {
     }, []);
 
     return (
-        <div className="characters">
+        <div className={theme ? "characters-1" : "characters-2"}>
             <div className="cards-container">
                 {
                     characters.map(character => (

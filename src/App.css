@@ -34,9 +34,15 @@ h1{
   border: 1px solid;
 }
 
-.characters{
+.characters-1{
   width: 100%;
-  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.characters-2{
+  width: 100%;
+  padding-top: 20px;
+  background-color: rgba(237, 241, 241, 0.968);
 }
 
 .cards-container{
