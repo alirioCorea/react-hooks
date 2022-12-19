@@ -36,12 +36,10 @@ h1{
 
 .characters-1{
   width: 100%;
-  padding-top: 20px;
 }
 
 .characters-2{
   width: 100%;
-  padding-top: 20px;
   background-color: rgba(237, 241, 241, 0.968);
 }
 
@@ -62,6 +60,27 @@ h1{
   height: 100%;
 }
 
+.search{
+  padding: 20px 0px;
+}
+
+.buscador{
+  display: flex;
+  justify-content: center;
+}
+
+.buscador-tittle{
+  font-size: 24px;
+  padding-right: 20px;
+}
+
+.buscador-input{
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
 @media (max-width: 818px) {
   .cards-container{
     grid-template-columns: repeat(2 , 1fr);
@@ -71,6 +90,14 @@ h1{
 @media (max-width: 480px) {
   .cards-container{
     grid-template-columns: repeat(1 , 1fr);
+  }
+  .buscador{
+    flex-direction: column;
+    align-items: center;
+  }
+  .buscador-input{
+    width: 80%;
+    margin-top: 20px;
   }
 }
 
